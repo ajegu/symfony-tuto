@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Blog:show{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Blog:show page</h1>
+    <p>Slug : {{ slug | reverse | upper }}</p>
+    <a href="{{ path('blog') }}">Home</a>
+
+{% endblock %}

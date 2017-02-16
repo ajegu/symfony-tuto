@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Blog:list{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Blog:list page</h1>
+    <p>Page number : {{ pageNumber }}</p>
+    <a href="{{ url }}">My first page</a>
+    <a href="{{ path('blog_post') }}">Home</a>
+{% endblock %}

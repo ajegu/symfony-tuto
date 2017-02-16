@@ -1,0 +1,22 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+blog:
+    path:      /blog/{page}
+    defaults:  { _controller: AppBundle:Blog:list,  page:1}
+
+blog_show:
+    path:      /blog/show/{slug}
+    defaults:  { _controller: AppBundle:Blog:show,  slug:1}
+
+blog_post:
+    path:      /blog/post/
+    defaults:  { _controller: AppBundle:Blog:post}
+
+blog_task:
+    path:      /blog/task/
+    defaults:  { _controller: AppBundle:Blog:task}
+
+
