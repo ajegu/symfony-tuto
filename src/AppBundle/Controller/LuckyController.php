@@ -18,7 +18,7 @@ class LuckyController extends Controller
         //return new Response('<html><body>'.$number.'</body></html>');
 
         return $this->render('AppBundle:Lucky:number.html.twig', array(
-            'myNumber' => $number
+            'myNumber' => $number,
         ));
 
     }
